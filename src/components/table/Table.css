@@ -56,7 +56,7 @@
 
   td {
     background-color: var(--accent-color);
-    border-right: 1px solid #D6A40080;
+    border-right: 1px solid var(--border-accent);
   }
 }
 
@@ -88,4 +88,64 @@
 
 .labels-for-desktop {
   display: none;
+}
+
+@media screen and (min-width: 1225px) {
+  .price-examples {
+    position: relative;
+
+    tbody {
+      width: calc(1160rem / 16);
+      flex-direction: row;
+    }
+
+    tbody:first-of-type {
+      .sales-comparison-title {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        width: 50%;
+        height: calc(50rem / 16);
+        top: calc(-50rem / 16);
+        right: 0;
+
+        td {
+          flex-basis: 40%;
+          flex-grow: 0;
+        }
+      }
+
+    }
+  }
+
+  .sales-comparison-title {
+    display: none;
+  }
+
+  .description-price-example {
+    flex-basis: 700px;
+    border-top: 1px solid var(--border-dark);
+  }
+
+
+  .description-price-example, .prices-comparison {
+    flex-basis: 50%;
+  }
+
+
+  .description-price-example {
+    & ul {
+      justify-content: space-between;
+      flex-direction: row;
+
+      li {
+        flex-basis: 50%;
+
+      }
+    }
+  }
+
+  .prices-comparison {
+    margin-bottom: unset;;
+  }
 }

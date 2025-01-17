@@ -34,3 +34,13 @@ main {
   padding-right: calc(35rem / 16);
   overflow: hidden;
 }
+
+@media screen and (min-width: 1225px) {
+  header {
+    flex-basis: calc(100rem / 16);
+  }
+
+  main {
+    padding-top: calc(186rem / 16);
+  }
+}
