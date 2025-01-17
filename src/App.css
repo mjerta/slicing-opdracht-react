@@ -22,3 +22,15 @@ header {
     }
   }
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-main);
+  flex-grow: 1;
+  align-items: center;
+  padding-top: calc(58rem / 16);
+  padding-left: calc(35rem / 16);
+  padding-right: calc(35rem / 16);
+  overflow: hidden;
+}

@@ -1,0 +1,91 @@
+.price-examples {
+  min-width: calc(360rem / 16);
+  margin: 0;
+  padding: 0;
+
+  tbody {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & td {
+    flex-basis: 50%;
+    flex-grow: 1;
+    display: flex;
+  }
+}
+
+.sales-comparison-title {
+  display: flex;
+}
+
+.description-price-example {
+  display: flex;
+
+  td {
+    display: flex;
+    flex-direction: column;
+    row-gap: .3rem;
+    padding: calc(30rem / 16) calc(19rem / 16);
+    background-color: var(--dark-color);
+    color: white;
+  }
+
+  & ul {
+    color: var(--white-text-color);
+    display: flex;
+    flex-direction: column;
+    row-gap: .3rem;
+    padding-left: calc(12rem / 16);
+  }
+
+
+  h4, li::marker {
+    color: var(--accent-color);
+  }
+}
+
+.sales-comparison-title > td, .prices-comparison > td {
+  justify-content: center;
+  align-items: center;
+}
+
+.sales-comparison-title {
+  flex-basis: 2.5rem;
+  color: var(--white-color);
+
+  td {
+    background-color: var(--accent-color);
+    border-right: 1px solid #D6A40080;
+  }
+}
+
+.prices-comparison {
+  display: flex;
+  flex-basis: calc(72rem / 16);
+  background-color: var(--white-color);
+  border-top: 1px solid var(--border-light);
+  margin-bottom: calc(32rem / 16);
+
+  td {
+    display: flex;
+    flex-direction: column;
+  }
+
+  td:first-of-type {
+    border-right: 1px solid var(--border-light);
+  }
+
+  .price {
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+
+  .price-addition {
+    color: var(--color-success);
+  }
+}
+
+.labels-for-desktop {
+  display: none;
+}
