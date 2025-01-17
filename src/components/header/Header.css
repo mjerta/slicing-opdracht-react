@@ -1,0 +1,16 @@
+.phone-icon {
+  width: 2rem;
+}
+
+.phone-number {
+  display: none;
+}
+
+
+@media screen and (min-width: 1225px) {
+  .phone-number {
+    display: unset;
+    color: var(--dark-color);
+    font-weight: 600;
+  }
+}
